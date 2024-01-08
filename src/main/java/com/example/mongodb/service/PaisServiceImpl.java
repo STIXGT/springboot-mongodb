@@ -11,21 +11,21 @@ import java.util.*;
 @Service
 public class PaisServiceImpl implements PaisService {
 	@Autowired
-	private PaisPersistence employeeRepo;
+	private PaisPersistence paisRepo;
 
 	@Override
 	public Pais save(Pais pais) {
-		return employeeRepo.save(pais);
+		return paisRepo.save(pais);
 	}
 
 	@Override
 	public List<Pais> getAllPais() {
-		return employeeRepo.findAll();
+		return paisRepo.findAll();
 	}
 
 	@Override
 	public List<Pais> searchPais(String name) {
-		return employeeRepo.findByName(name);
+		return paisRepo.findByName(name);
 	}
 
 }
