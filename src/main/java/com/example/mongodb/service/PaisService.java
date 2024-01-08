@@ -8,7 +8,7 @@ public interface PaisService {
 
 	public Pais save(Pais pais);
 
-	List<Pais> getAllEmployee();
+	List<Pais> getAllPais();
 
 	List<Pais> searchPais(String name);
 

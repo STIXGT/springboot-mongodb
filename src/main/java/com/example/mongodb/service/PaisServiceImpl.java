@@ -19,7 +19,7 @@ public class PaisServiceImpl implements PaisService {
 	}
 
 	@Override
-	public List<Pais> getAllEmployee() {
+	public List<Pais> getAllPais() {
 		return employeeRepo.findAll();
 	}
 
